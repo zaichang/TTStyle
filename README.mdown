@@ -1,0 +1,22 @@
+TTStyle
+=======
+
+TTStyle was formerly part of the now deprecated Three20 library, and has been extracted as a standalone package for apps depending on the library to be able to piecewise migrate from it.
+
+https://github.com/facebook/three20
+
+Commit history from Three20 has been removed to minimize size, but a version with that included can be introduced if it is important to others.
+
+
+== Notes ==
+Collapsed TTCore and TTNetworking libraries and copied key classes into the single library.
+
+TTStyledText.h is currently not included in the project, because of its dependency on TTNetworking.
+
+
+== Usage ==
+* Add Header Search path, for example $(PROJECT_DIR)/../path/to
+* Add Three20Style as a project dependency of your application and add libThree20Style.a to the Link Binaries phase
+
+Also note that one should remove the library prefix when importing headers, like this:
+#import "Three20Style.h"
