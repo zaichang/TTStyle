@@ -8,15 +8,21 @@ https://github.com/facebook/three20
 Commit history from Three20 has been removed to minimize size, but a version with that included can be introduced if it is important to others.
 
 
-== Notes ==
+
+### Notes
 Collapsed TTCore and TTNetworking libraries and copied key classes into the single library.
 
 TTStyledText.h is currently not included in the project, because of its dependency on TTNetworking.
 
 
-== Usage ==
-* Add Header Search path, for example $(PROJECT_DIR)/../path/to
-* Add Three20Style as a project dependency of your application and add libThree20Style.a to the Link Binaries phase
+
+### Usage
+Add Header Search path, for example $(PROJECT_DIR)/../path/to
+
+Add Three20Style as a project dependency of your application and add libThree20Style.a to the Link Binaries phase
 
 Also note that one should remove the library prefix when importing headers, like this:
+```
 #import "Three20Style.h"
+```
+
