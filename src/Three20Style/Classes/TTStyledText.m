@@ -29,12 +29,12 @@
 #import "TTStyledImageFrame.h"
 
 // Network
-#import "Three20Network/TTURLImageResponse.h"
-#import "Three20Network/TTURLCache.h"
-#import "Three20Network/TTURLRequest.h"
+#import "TTURLImageResponse.h"
+#import "TTURLCache.h"
+#import "TTURLRequest.h"
 
 // Core
-#import "Three20Core/TTGlobalCore.h"
+#import "TTGlobalCore.h"
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
