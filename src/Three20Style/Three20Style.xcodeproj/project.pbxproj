@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		393420D5182C6BB900C4B1D6 /* TTView.h in Headers */ = {isa = PBXBuildFile; fileRef = 393420D3182C6BB900C4B1D6 /* TTView.h */; };
+		393420D6182C6BB900C4B1D6 /* TTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 393420D4182C6BB900C4B1D6 /* TTView.m */; };
+		393420D7182C6BB900C4B1D6 /* TTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 393420D4182C6BB900C4B1D6 /* TTView.m */; };
 		3937FBE7182C0A7B00C18580 /* TTButtonContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3937FBE4182C0A7B00C18580 /* TTButtonContent.h */; };
 		3937FBE8182C0A7B00C18580 /* TTButtonContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3937FBE5182C0A7B00C18580 /* TTButtonContent.m */; };
 		3937FBE9182C0A7B00C18580 /* TTImageViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3937FBE6182C0A7B00C18580 /* TTImageViewDelegate.h */; };
@@ -207,6 +210,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		393420D3182C6BB900C4B1D6 /* TTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTView.h; path = Classes/TTView.h; sourceTree = "<group>"; };
+		393420D4182C6BB900C4B1D6 /* TTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTView.m; path = Classes/TTView.m; sourceTree = "<group>"; };
 		3937FBE4182C0A7B00C18580 /* TTButtonContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTButtonContent.h; path = Classes/TTButtonContent.h; sourceTree = "<group>"; };
 		3937FBE5182C0A7B00C18580 /* TTButtonContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTButtonContent.m; path = Classes/TTButtonContent.m; sourceTree = "<group>"; };
 		3937FBE6182C0A7B00C18580 /* TTImageViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTImageViewDelegate.h; path = Classes/TTImageViewDelegate.h; sourceTree = "<group>"; };
@@ -433,6 +438,8 @@
 				3937FBE4182C0A7B00C18580 /* TTButtonContent.h */,
 				3937FBE5182C0A7B00C18580 /* TTButtonContent.m */,
 				3937FBE6182C0A7B00C18580 /* TTImageViewDelegate.h */,
+				393420D3182C6BB900C4B1D6 /* TTView.h */,
+				393420D4182C6BB900C4B1D6 /* TTView.m */,
 			);
 			name = Three20UI;
 			sourceTree = "<group>";
@@ -828,6 +835,7 @@
 				6EE737571184A38F00A35176 /* TTRectangleShape.h in Headers */,
 				6EE737581184A38F00A35176 /* TTReflectiveFillStyle.h in Headers */,
 				6EE737591184A38F00A35176 /* TTRoundedLeftArrowShape.h in Headers */,
+				393420D5182C6BB900C4B1D6 /* TTView.h in Headers */,
 				6EE7375A1184A38F00A35176 /* TTRoundedRectangleShape.h in Headers */,
 				6EE7375B1184A38F00A35176 /* TTRoundedRightArrowShape.h in Headers */,
 				6EE7375C1184A38F00A35176 /* TTShadowStyle.h in Headers */,
@@ -1060,6 +1068,7 @@
 				6E64640C1187F5EC00F08CB1 /* TTStyledButtonNode.m in Sources */,
 				6E64640D1187F5EC00F08CB1 /* TTStyledLinkNode.m in Sources */,
 				39B2F012179D8AD8007E169B /* TTGlobalCoreRects.m in Sources */,
+				393420D6182C6BB900C4B1D6 /* TTView.m in Sources */,
 				3937FC05182C0C2100C18580 /* TTUserInfo.m in Sources */,
 				39B2F017179D8B7A007E169B /* TTDebug.m in Sources */,
 				39B2F01E179D8C14007E169B /* NSStringAdditions.m in Sources */,
@@ -1090,6 +1099,7 @@
 				39B2F033179D8DA7007E169B /* TTEntityTables.m in Sources */,
 				3937FC01182C0BF000C18580 /* TTURLRequestQueue.m in Sources */,
 				39B2F039179D8E8A007E169B /* TTURLCache.m in Sources */,
+				393420D7182C6BB900C4B1D6 /* TTView.m in Sources */,
 				3937FBFC182C0BDB00C18580 /* TTErrorCodes.m in Sources */,
 				39B2F03E179D8EC5007E169B /* TTGlobalNetwork.m in Sources */,
 				39B2F043179D8EFF007E169B /* TTGlobalCorePaths.m in Sources */,
