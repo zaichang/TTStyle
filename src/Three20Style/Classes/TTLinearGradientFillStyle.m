@@ -57,6 +57,21 @@
   TTLinearGradientFillStyle* style = [[[self alloc] initWithNext:next] autorelease];
   style.color1 = color1;
   style.color2 = color2;
+  style.startPoint = CGPointMake(0.5, 0.0);
+  style.endPoint = CGPointMake(0.5, 1.0);
+  return style;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
++ (TTLinearGradientFillStyle*)styleWithColor1:(UIColor*)color1 color2:(UIColor*)color2
+                                   startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint
+                                         next:(TTStyle*)next {
+  TTLinearGradientFillStyle* style = [[[self alloc] initWithNext:next] autorelease];
+  style.color1 = color1;
+  style.color2 = color2;
+  style.startPoint = startPoint;
+  style.endPoint = endPoint;
   return style;
 }
 
@@ -78,9 +93,13 @@
 
   UIColor* colors[] = {_color1, _color2};
   CGGradientRef gradient = [self newGradientWithColors:colors count:2];
-  CGContextDrawLinearGradient(ctx, gradient, CGPointMake(rect.origin.x, rect.origin.y),
-                              CGPointMake(rect.origin.x, rect.origin.y+rect.size.height),
-                              kCGGradientDrawsAfterEndLocation);
+
+  CGPoint gradientStart = CGPointMake(rect.origin.x + self.startPoint.x * rect.size.width,
+                                      rect.origin.y + self.startPoint.y * rect.size.height);
+  CGPoint gradientEnd = CGPointMake(rect.origin.x + self.endPoint.x * rect.size.width,
+                                    rect.origin.y + self.endPoint.y * rect.size.height);
+
+  CGContextDrawLinearGradient(ctx, gradient, gradientStart, gradientEnd, kCGGradientDrawsAfterEndLocation);
   CGGradientRelease(gradient);
 
   CGContextRestoreGState(ctx);

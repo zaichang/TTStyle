@@ -20,12 +20,20 @@
 @interface TTLinearGradientFillStyle : TTStyle {
   UIColor* _color1;
   UIColor* _color2;
+  CGPoint _startPoint;
+  CGPoint _endPoint;
 }
 
 @property (nonatomic, retain) UIColor* color1;
 @property (nonatomic, retain) UIColor* color2;
+@property (nonatomic, assign) CGPoint startPoint;
+@property (nonatomic, assign) CGPoint endPoint;
 
 + (TTLinearGradientFillStyle*)styleWithColor1:(UIColor*)color1 color2:(UIColor*)color2
+                                         next:(TTStyle*)next;
+
++ (TTLinearGradientFillStyle*)styleWithColor1:(UIColor*)color1 color2:(UIColor*)color2
+                                   startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint
                                          next:(TTStyle*)next;
 
 @end
