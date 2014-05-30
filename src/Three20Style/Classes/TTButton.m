@@ -35,8 +35,8 @@
 // Core
 #import "TTCorePreprocessorMacros.h"
 
-static const CGFloat kHPadding = 8.0f;
-static const CGFloat kVPadding = 7.0f;
+//static const CGFloat kHPadding = 8.0f;
+//static const CGFloat kVPadding = 7.0f;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
